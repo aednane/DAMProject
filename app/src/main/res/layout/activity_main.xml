@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/main"
+    android:background="#EEE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/umbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Université M'Hamed Bougara"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#0099ff"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Bienvenue"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#0099ff"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/umbb"/>
+
+    <ImageView
+        android:id="@+id/university"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcome"
+        android:src="@drawable/boumerdes_university">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/university"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/text"
+        android:textColor="@color/black"
+        android:textSize="17dp"></TextView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:text="En savoir plus"
+        android:textColor="#0099ff"
+        android:textSize="17dp"></TextView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"
+        android:background="@drawable/bottom_background"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:elevation="15dp"
+        android:id="@+id/bottom_bar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

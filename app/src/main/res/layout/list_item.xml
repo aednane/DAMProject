@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identifiant"
+                android:textStyle="bold"
+                android:id="@+id/idf_list"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/idf_list"
+                android:layout_alignLeft="@id/desc_item"
+                android:text="idf"
+                android:id="@+id/idf_item"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idf_list"
+                android:text="Description"
+                android:textStyle="bold"
+                android:id="@+id/desc_list"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/desc_list"
+                android:layout_toRightOf="@id/desc_list"
+                android:layout_marginLeft="15dp"
+                android:text="desc"
+                android:id="@+id/desc_item"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_list"
+                android:text="Téléphone"
+                android:textStyle="bold"
+                android:id="@+id/phone_list"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/phone_list"
+                android:layout_alignLeft="@+id/desc_item"
+                android:text="phone"
+                android:id="@+id/phone_item"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_list"
+                android:text="Email"
+                android:textStyle="bold"
+                android:id="@+id/email_list"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/email_list"
+                android:layout_alignLeft="@+id/desc_item"
+                android:text="email"
+                android:id="@+id/email_item"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_list"
+                android:text="Coordonnées"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:id="@+id/coords_list"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="coords"
+                android:visibility="gone"
+                android:id="@+id/coords_item"></TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/email_list"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/baseline_sms_24"
+                android:id="@+id/sms_icon"></ImageView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/sms_icon"
+                android:layout_marginLeft="30dp"
+                android:layout_alignBottom="@+id/sms_icon"
+                android:src="@drawable/baseline_call_24"
+                android:id="@+id/call_icon"></ImageView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/call_icon"
+                android:layout_marginLeft="30dp"
+                android:layout_alignBottom="@+id/call_icon"
+                android:src="@drawable/baseline_email_24"
+                android:id="@+id/email_icon"></ImageView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/email_icon"
+                android:layout_marginLeft="30dp"
+                android:layout_alignBottom="@+id/call_icon"
+                android:src="@drawable/baseline_location_on_24"
+                android:id="@+id/coords_icon"></ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
